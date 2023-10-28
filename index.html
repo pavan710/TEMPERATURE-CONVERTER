@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #052857, rgb(86, 86, 252));
+            font-family: 'Poppins', sans-serif;
+        }
+        input{
+            padding:15px 5px;
+            border-radius: 5px;
+            border-style: ridge;
+        }
+        .main {
+            height: 60vh;
+            background-color: white;
+            width: 30%;
+            margin-top: 10%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: black;
+        }
+        .des{
+            
+            
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 3px;
+            padding: 7px 0px;
+            
+        }
+        button{
+            background-image: linear-gradient(to right, #052857, rgb(86, 86, 252));
+            border-style: none;
+            font-size: 26px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main">
+        <br>
+        <h2>Temperature Converter</h2> 
+
+        <input type="number" id="temperatureInput" placeholder="Enter Temperature"><br><br>
+        <label>Convert from:- </label>
+        <select id="temperatureType" class="des">
+            <option value=""></option>
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+        <br><br>
+        <label>Convert into:- </label>
+        <select id="convertedOptions" class="des">
+        </select>
+      <br><br>
+        <button onclick="convertTemperature()">Convert</button>
+        <br>
+        <p id="conversionResult"></p>
+
+    </div>
+</center>
+<script  src="index.js">
+   
+</script>
+</body>
+</html>
